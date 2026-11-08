@@ -1,0 +1,102 @@
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: #eeeeee;
+    color: #333333;
+    margin: 0;
+}
+
+header {
+    background-color: #263447;
+    color: white;
+    padding: 15px 30px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    color: #42d6b2;
+}
+
+main {
+    width: 90%;
+    margin: 30px auto;
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 25px;
+}
+
+#catalogo {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+article, aside section {
+    background-color: white;
+    padding: 15px;
+    border: 1px solid #cccccc;
+    border-radius: 5px;
+}
+
+article h3 {
+    color: #263447;
+}
+
+.precio-fila {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.precio {
+    color: #159b7d;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+button, select, input {
+    padding: 8px;
+    margin: 5px 0;
+}
+
+button {
+    background-color: #159b7d;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #117a63;
+}
+
+aside section {
+    margin-bottom: 20px;
+}
+
+#productos-carrito p {
+    border-bottom: 1px solid #cccccc;
+    padding-bottom: 8px;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+form input, form select {
+    box-sizing: border-box;
+    width: 100%;
+}
+
+#error {
+    color: red;
+}
+
+#campo-autonomia {
+    display: none;
+}

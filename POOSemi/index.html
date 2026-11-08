@@ -1,0 +1,76 @@
+
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>TecnoShop</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>TecnoShop</h1>
+        <p id="contador">Carrito (0)</p>
+    </header>
+    <main>
+        <section>
+            <h2>Catálogo de ordenadores</h2>
+            <select id="filtro">
+                <option value="todos">Todos</option>
+                <option value="sobremesa">Sobremesa</option>
+                <option value="portatil">Portátiles</option>
+            </select>
+
+            <button id="ordenar">Ordenar por precio</button>
+
+            <div id="catalogo"></div>
+        </section>
+        <aside>
+            <section>
+                <h2>Carrito</h2>
+                <div id="productos-carrito"></div>
+
+                <p>Productos: <span id="cantidad">0</span></p>
+                <p>Total: <strong id="total">0 €</strong></p>
+
+                <button id="vaciar">Vaciar carrito</button>
+            </section>
+            <section>
+                <h2>Añadir producto</h2>
+                <form id="formulario">
+                    <label>Tipo</label>
+                    <select id="tipo">
+                        <option value="sobremesa">Sobremesa</option>
+                        <option value="portatil">Portátil</option>
+                    </select>
+
+                    <label>Marca</label>
+                    <input type="text" id="marca">
+
+                    <label>Modelo</label>
+                    <input type="text" id="modelo">
+
+                    <label>Precio (€)</label>
+                    <input type="number" id="precio" step="0.01">
+
+                    <label>RAM (GB)</label>
+                    <input type="number" id="ram">
+
+                    <label>Disco (GB)</label>
+                    <input type="number" id="disco">
+
+                    <label>Pulgadas</label>
+                    <input type="number" id="pulgadas">
+
+                    <div id="campo-autonomia">
+                        <label>Autonomía (horas)</label>
+                        <input type="number" id="autonomia">
+                    </div>
+                    <p id="error"></p>
+                    <button type="submit">Añadir producto</button>
+                </form>
+            </section>
+        </aside>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
